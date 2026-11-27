@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jacques AMON</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg"><i></i><i></i><i></i></div>
+<nav class="glass"><a href="#hero">Accueil</a><a href="#skills">Compétences</a><a href="#projets">Projets</a><a href="#carte">Carte</a><a href="#contact">Contact</a></nav>
+
+<section id="hero">
+  <span class="tag">Géomaticien &amp; Télépilote Drone</span>
+  <h1>Jacques AMON,<br><span>la donnée a un lieu.</span></h1>
+  <p class="lead">Je rends la donnée spatiale lisible et utile : des cartes, des applications de webmapping et des dashboards pour décider, de la parcelle agricole à la ville.</p>
+  <div><a class="btn p" href="#projets">Voir mes projets</a><a class="btn g" href="#contact">Me contacter</a></div>
+  <div class="stats">
+    <div class="glass"><b>4</b><small>Projets portfolio</small></div>
+    <div class="glass"><b>3</b><small>Années d’expérience</small></div>
+    <div class="glass"><b>20+</b><small>Sites d'interventions</small></div>
+  </div>
+</section>
+
+<section id="skills" class="rv">
+  <h2>Compétences</h2><p class="sub">Des données brutes jusqu’à la carte interactive.</p>
+  <div class="skills">
+    <div class="glass"><h3>SIG &amp; Collecte</h3><div class="chips"><span class="chip glass">QGIS / QField</span><span class="chip glass">ArcGIS / ArcGIS Pro</span><span class="chip glass">PostgreSQL / PostGIS</span><span class="chip glass">KoboToolbox / Kizeo</span></div></div>
+    <div class="glass"><h3>Télédétection</h3><div class="chips"><span class="chip glass">eCognition</span><span class="chip glass">ENVI</span><span class="chip glass">Drone</span><span class="chip glass">Dronedeploy</span><span class="chip glass">ODM</span><span class="chip glass">Pix4D</span></div></div>
+    <div class="glass"><h3>Webmapping</h3><div class="chips"><span class="chip glass">Leaflet</span><span class="chip glass">Folium</span><span class="chip glass">Lizmap</span></div></div>
+    <div class="glass"><h3>Visualisation</h3><div class="chips"><span class="chip glass">Power BI</span><span class="chip glass">Qlik Sense</span><span class="chip glass">Cartographie</span></div></div>
+  </div>
+</section>
+
+<section id="projets" class="rv">
+  <h2>Projets</h2><p class="sub">Des cartes, des applications de webmapping et des tableaux de bord qui transforment la donnée géographique en outil de décision. Ces projets illustrent mon expertise dans le domaine de la géomatique et de la télédétection (ils ne sont pas tous disponibles exclusive).</p>
+  <div class="filters">
+    <button class="on" data-f="all">Tous</button><button data-f="web">Webmapping</button><button data-f="dash">Dashboard</button><button data-f="tele">Télédétection</button>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+  <dialog class="image-viewer" id="image-viewer" aria-label="Aperçu de l’image du projet">
+    <button type="button" class="image-viewer-close" id="image-viewer-close" aria-label="Fermer l’image">×</button>
+    <img id="image-viewer-img" alt="">
+  </dialog>
+
+<section id="carte" class="rv">
+  <h2>Webmapping</h2><p class="sub">Villes où j'ai intervenu.</p>
+  <div class="map-toolbar">
+    <p id="map-status" role="status" aria-live="polite"></p>
+    <button type="button" class="map-fullscreen" id="map-fullscreen" aria-label="Afficher la carte en plein écran" title="Plein écran">⛶</button>
+  </div>
+  <div class="mapwrap">
+    <div class="glass map">
+      <div id="atlas-map" role="application" aria-label="Carte interactive de la Côte d’Ivoire"></div>
+    </div>
+    <aside class="glass info" id="info" aria-live="polite"></aside>
+  </div>
+</section>
+
+<section id="contact" class="rv">
+  <div class="glass contact">
+    <h2>Travaillons ensemble</h2>
+    <p class="sub">Cartographie, webmapping, analyse spatiale : parlons de votre projet.</p>
+    <a class="btn p" href="mailto:jacquesamon1@gmail.com">jacquesamon1@gmail.com</a><a class="btn g" href="https://www.linkedin.com/in/kouametché-jean-jacques-amon-42b9a4163" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="btn g" href="https://github.com/jacquesAMON21" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+</section>
+<footer>© 2026 Jacques AMON · Géomaticien &amp; Télépilote drone</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
